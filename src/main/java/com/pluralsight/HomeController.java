@@ -10,8 +10,8 @@ public class HomeController {
 
 
 @RequestMapping(path="/", method = RequestMethod.GET)
-    public String index(@RequestParam(defaultValue="World") String name){
-    return "hello" + name + "!";
+    public String index(@RequestParam(defaultValue="USA") String country){
+    return  country;
 }
 
 
